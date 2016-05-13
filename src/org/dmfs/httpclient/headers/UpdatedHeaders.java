@@ -75,7 +75,7 @@ public final class UpdatedHeaders implements Headers
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public <T> Header<T> header(SimpleHeaderType<T> headerType)
+	public <T> Header<T> header(SingletonHeaderType<T> headerType)
 	{
 		return mNewHeader.type().equals(headerType) ? (Header<T>) mNewHeader : mHeaders.header(headerType);
 	}

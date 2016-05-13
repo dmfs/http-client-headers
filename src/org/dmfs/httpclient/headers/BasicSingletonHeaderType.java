@@ -28,7 +28,7 @@ import org.dmfs.httpclient.typedentity.EntityConverter;
  * @param <ValueType>
  *            The type of the header value.
  */
-public final class BasicHeaderType<ValueType> implements SimpleHeaderType<ValueType>
+public final class BasicSingletonHeaderType<ValueType> implements SingletonHeaderType<ValueType>
 {
 	private final String mHeaderName;
 	private final EntityConverter<ValueType> mValueConverter;
@@ -42,7 +42,7 @@ public final class BasicHeaderType<ValueType> implements SimpleHeaderType<ValueT
 	 * @param valueConverter
 	 *            A {@link HeaderValueConverter} to convert header values from/to string.
 	 */
-	public BasicHeaderType(String headerName, EntityConverter<ValueType> valueConverter)
+	public BasicSingletonHeaderType(String headerName, EntityConverter<ValueType> valueConverter)
 	{
 		mHeaderName = headerName;
 		mValueConverter = valueConverter;
@@ -94,7 +94,7 @@ public final class BasicHeaderType<ValueType> implements SimpleHeaderType<ValueT
 	@Override
 	public boolean equals(Object obj)
 	{
-		return this == obj || (obj instanceof SimpleHeaderType && mHeaderName.equals(((HeaderType<?>) obj).name()));
+		return this == obj || (obj instanceof SingletonHeaderType && mHeaderName.equals(((HeaderType<?>) obj).name()));
 	}
 
 }

@@ -62,7 +62,7 @@ public final class SingletonHeaders implements Headers
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public <T> Header<T> header(SimpleHeaderType<T> headerType)
+	public <T> Header<T> header(SingletonHeaderType<T> headerType)
 	{
 		if (!mHeader.type().equals(headerType))
 		{

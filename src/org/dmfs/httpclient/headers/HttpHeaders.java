@@ -34,7 +34,7 @@ public interface HttpHeaders
 	/**
 	 * The content-type header that contains the media-type of the response entity.
 	 */
-	public final static SimpleHeaderType<MediaType> CONTENT_TYPE = new BasicHeaderType<MediaType>("content-type", MediaTypeConverter.INSTANCE);
+	public final static SingletonHeaderType<MediaType> CONTENT_TYPE = new BasicSingletonHeaderType<MediaType>("content-type", MediaTypeConverter.INSTANCE);
 
 	/**
 	 * The Link header that contains links to documents related to the response.

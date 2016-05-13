@@ -51,7 +51,7 @@ public final class EmptyHeaders implements Headers
 
 
 	@Override
-	public <T> Header<T> header(SimpleHeaderType<T> headerType)
+	public <T> Header<T> header(SingletonHeaderType<T> headerType)
 	{
 		throw new NoSuchElementException("EmptyHeaders don't contain any Headers");
 	}

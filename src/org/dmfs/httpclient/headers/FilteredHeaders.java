@@ -26,7 +26,7 @@ import org.dmfs.iterators.FilteredIterator;
 
 
 /**
- * A {@link Headers} decorator that filters certain {@link HeaderType}s from a given {@link Headers}
+ * A {@link Headers} decorator that filters certain {@link HeaderType}s from the given {@link Headers}
  * 
  * @author Marten Gajda <marten@dmfs.org>
  */
@@ -73,7 +73,7 @@ public final class FilteredHeaders implements Headers
 
 
 	@Override
-	public <T> Header<T> header(SimpleHeaderType<T> headerType)
+	public <T> Header<T> header(SingletonHeaderType<T> headerType)
 	{
 		if (isFiltered(headerType))
 		{
