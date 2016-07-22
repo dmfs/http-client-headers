@@ -1,11 +1,11 @@
-package org.dmfs.httpclient.headers;
+package org.dmfs.httpessentials.headers;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.dmfs.httpclient.converters.IntegerConverter;
+import org.dmfs.httpessentials.converters.IntegerConverter;
 import org.junit.Test;
 
 

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.dmfs.httpclient.headers;
+package org.dmfs.httpessentials.headers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dmfs.httpclient.converters.ListConverter;
-import org.dmfs.httpclient.typedentity.EntityConverter;
+import org.dmfs.httpessentials.converters.ListConverter;
+import org.dmfs.httpessentials.typedentity.EntityConverter;
 
 
 /**

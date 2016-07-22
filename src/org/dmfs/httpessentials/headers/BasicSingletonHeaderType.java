@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.dmfs.httpclient.headers;
+package org.dmfs.httpessentials.headers;
 
-import org.dmfs.httpclient.typedentity.EntityConverter;
+import org.dmfs.httpessentials.typedentity.EntityConverter;
 
 
 /**

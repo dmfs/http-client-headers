@@ -1,4 +1,4 @@
-package org.dmfs.httpclient.headers;
+package org.dmfs.httpessentials.headers;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.NoSuchElementException;
 
-import org.dmfs.httpclient.types.StringMediaType;
+import org.dmfs.httpessentials.types.StringMediaType;
 import org.junit.Test;
 
 

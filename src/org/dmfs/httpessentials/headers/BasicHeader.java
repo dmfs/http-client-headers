@@ -15,9 +15,7 @@
  * limitations under the License.
  */
 
-package org.dmfs.httpclient.headers;
-
-
+package org.dmfs.httpessentials.headers;
 
 /**
  * A basic implementation of a {@link Header}.

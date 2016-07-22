@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.dmfs.httpclient.headers;
+package org.dmfs.httpessentials.headers;
 
 import java.util.Collections;
 import java.util.Iterator;
