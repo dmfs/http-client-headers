@@ -17,10 +17,13 @@
 
 package org.dmfs.httpessentials.headers;
 
+import java.net.URI;
+
 import org.dmfs.httpessentials.converters.IntegerConverter;
 import org.dmfs.httpessentials.converters.LinkConverter;
 import org.dmfs.httpessentials.converters.MediaTypeConverter;
 import org.dmfs.httpessentials.converters.QuotedStringConverter;
+import org.dmfs.httpessentials.converters.UriConverter;
 import org.dmfs.httpessentials.types.Link;
 import org.dmfs.httpessentials.types.MediaType;
 
@@ -56,5 +59,10 @@ public interface HttpHeaders
 	 * The content-encoding header that contains the content encoding of the response entity.
 	 */
 	public final static ListHeaderType<String> CONTENT_ENCODING = new BasicListHeaderType<String>("content-encoding", QuotedStringConverter.INSTANCE);
+
+	/**
+	 * The location header.
+	 */
+	public final static ListHeaderType<URI> LOCATION = new BasicListHeaderType<URI>("location", UriConverter.INSTANCE);
 
 }
