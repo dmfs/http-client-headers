@@ -63,6 +63,6 @@ public interface HttpHeaders
 	/**
 	 * The location header.
 	 */
-	public final static ListHeaderType<URI> LOCATION = new BasicListHeaderType<URI>("location", UriConverter.INSTANCE);
+	public final static SingletonHeaderType<URI> LOCATION = new BasicSingletonHeaderType<URI>("location", UriConverter.INSTANCE);
 
 }
